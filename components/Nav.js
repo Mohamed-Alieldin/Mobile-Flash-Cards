@@ -1,18 +1,16 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, StatusBar, AppRegistry  } from 'react-native';
+import { View, StatusBar, AppRegistry  } from 'react-native';
 import Decks from './Decks'
 import NewDeck from './NewDeck'
 import AddCard from './AddCard'
 import DeckPreview from './DeckPreview'
 import Quiz from './Quiz'
-import Constants from 'expo-constants';
 import {gray, purple, White} from '../utils/colors'
 import {createBottomTabNavigator  } from '@react-navigation/bottom-tabs'
 import { NavigationContainer  } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { Card } from 'react-native-paper';
 import {connect} from 'react-redux'
 
 const Stack = createStackNavigator()
@@ -45,15 +43,15 @@ const Tab = createBottomTabNavigator ()
           <Tab.Screen 
           name="Home"
           component={myStack}
-          options = {{tabBarIcon:({color, size}) =>
-          (<MaterialCommunityIcons name="home" color={{color}} size={size} />)}}
+          options = {{tabBarIcon:({size}) =>
+          (<MaterialCommunityIcons name="home"  size={size} />)}}
           />
 
           <Tab.Screen 
           name="New Deck"
           component={NewDeck}
-          options = {{tabBarIcon:({color, size}) =>
-          (<MaterialCommunityIcons name="plus" color={{color}} size={size} />)}}
+          options = {{tabBarIcon:({ size}) =>
+          (<MaterialCommunityIcons name="plus" size={size} />)}}
             />
         </Tab.Navigator>
         </NavigationContainer>

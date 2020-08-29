@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native'
-import {white, purple, gray, lightPurp, pink, blue, lightRed, green, black} from '../utils/colors'
+import {white, purple, lightRed, green, black} from '../utils/colors'
 
 
 function Answer(props){
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 container:{
   flex:1,
   justifyContent:'center',
-  alignItems:'space-around'
+  //alignItems:'space-around'
 },
 answer:{
   fontSize:35,

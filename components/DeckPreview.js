@@ -15,9 +15,9 @@ class DeckPreview extends Component{
 
   componentDidMount(){
     const {opacity, width, height} = this.state
-    Animated.timing(opacity, {toValue:1, duration:500}).start()
-    Animated.spring(width, {toValue:350, speed:5}).start()
-     Animated.spring(height, {toValue:400, speed:5}).start()
+    Animated.timing(opacity, {toValue:1, duration:500, useNativeDriver: false}).start()
+    Animated.spring(width, {toValue:350, speed:5, useNativeDriver: false}).start()
+     Animated.spring(height, {toValue:400, speed:5, useNativeDriver: false}).start()
   }
   
   render(){

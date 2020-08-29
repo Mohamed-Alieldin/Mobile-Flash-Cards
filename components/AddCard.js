@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
   },
 
   input : {
-        color: '#333',
         fontSize: 16,
         lineHeight: 23,  
         borderBottomColor: '#333',

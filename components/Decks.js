@@ -37,7 +37,7 @@ class Decks extends Component{
       <View style={{flex:1, paddingTop:25}}>
       {decks !== undefined && 
       Object.keys(decks).map((deckId)=>(
-        <Card style={styles.item} onPress={() => GoToDeck(deckId)}>
+        <Card key={deckId} style={styles.item} onPress={() => GoToDeck(deckId)}>
          <Text style={{fontSize:26, color: purple, textAlign: 'center'}}>
          {decks[deckId].title}</Text>     
          <Text style={{fontSize:18,color: gray ,textAlign: 'center'}}>

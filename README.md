@@ -6,7 +6,7 @@ React-Native &amp; Redux Project || Udacity React Developer Nano Degree
 
 This is the final assessment project for Udacity's React-NAtive course which is the last part of Udacity React Nano Degree Program.
 This project only includes the requirments for the project to be accepted.
-The Application was not tested on Ios environment and was tested only on Android environment so it should work fine on Android.
+The Application was **not tested** on **ios** environment and was **tested** only on **Android environment** so it should work fine on Android.
 
 ## Installation
 

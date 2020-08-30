@@ -45,10 +45,6 @@ import {AddDeck} from '../actions'
   }
 }
 
-function mapStateToProps(){
-
-}
-
 export default connect()(NewDeck)
 
 const styles = StyleSheet.create({

@@ -15,7 +15,6 @@ class AddCard extends Component{
   submit = () =>{
     const card = this.state
     const id = this.props.route.params.deckId
-    console.log("From Add Card Component", id)
     this.props.dispatch(AddNewCard(id, card))
     this.setState({
       question: null,

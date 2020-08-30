@@ -16,7 +16,6 @@ class Quiz extends Component{
 
     // handle show answer
     handleShowAnswer () {
-      console.log("Handle show Answer is pressed")
       this.setState((state) =>{
         return{
           ...state,
@@ -27,7 +26,6 @@ class Quiz extends Component{
 
         //handle show question
      handleShowQuestion = () =>{
-      console.log("Handle show question is pressed")
       this.setState((state) =>{
         return{
           ...state,
@@ -39,7 +37,6 @@ class Quiz extends Component{
 
         //handle InCorrect
     handleInCorrect = () =>{
-      console.log("Handle Incorrect is pressed")
       this.setState((state) =>{
         return{
           ...state,
@@ -53,7 +50,6 @@ class Quiz extends Component{
 
         //handle correct
      handleCorrect = () =>{
-      console.log("Handle correct is pressed")
       this.setState((state) =>{
         return{
           ...state,
@@ -66,7 +62,6 @@ class Quiz extends Component{
 
   // handleStartOver (Reseting Quiz Data)
   handleStartOver = ()=>{
-      console.log("Handle start over is pressed")
       this.setState((state) =>{
         return{
           counter : 0,
@@ -83,7 +78,6 @@ class Quiz extends Component{
     const {counter, showAnswer, correct, incorrect} = this.state
 
 
-    console.log("Quiz State", this.state)
 
     if(questionsCount ===0){
       return(
